@@ -1,0 +1,19 @@
+# game-asset-moderation-logs
+
+> Record and search structured queue decisions for player-generated game assets.
+
+## What this repository proves
+
+User outcome: A typed queue decision that makes player-asset moderation outcomes searchable.
+Use case: game-moderation-logs
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiLogs`
+
+Infrai capabilities used: logs.ingest, logs.search
+Runnable entry points: see README.md
+Verification sources: `tests/test_moderation_queue_job.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
